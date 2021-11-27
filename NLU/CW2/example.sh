@@ -11,7 +11,7 @@
 source ~/miniconda3/bin/activate nlu
 
 # Define a location for all your experiments to save
-ROOT=$(git rev-parse --show-toplevel)
+ROOT="$(git rev-parse --show-toplevel)/NLU/CW2"
 RESULTS_ROOT="${ROOT}/results"
 mkdir -p ${RESULTS_ROOT}
 

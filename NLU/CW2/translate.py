@@ -38,6 +38,7 @@ def main(args):
     args = argparse.Namespace(**{**vars(args), **vars(state_dict['args'])})
     utils.init_logging_translate(args)
 
+    print(os.path)
     # Load dictionaries
     src_dict = Dictionary.load(os.path.join(args.data, 'dict.{:s}'.format(args.source_lang)))   # 'data': 'europarl_prepared','source_lang': 'de'
     logging.info('Loaded a source dictionary ({:s}) with {:d} words'.format(args.source_lang, len(src_dict)))
